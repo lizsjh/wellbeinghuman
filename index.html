@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DailyNote</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/botui@0.3.9/build/botui.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/botui@0.3.9/build/botui-theme-default.css" />
+    <style>
+        html, body{
+            background-color: whitesmoke;
+    
+        }
+        .botui-container {
+            background-color: inherit;
+            position: relative;
+            height:auto;
+            overflow: hidden;
+        }
+
+        .botui-messages-container {
+            font-size:16px;
+        }
+
+        .botui-actions-container {
+            padding: 0px 50px;
+         
+        }
+
+        .botui-message {min-height:50px}
+
+        .botui-message-content.text {
+            background-color: lightskyblue;
+            color: black;
+            padding:10px 15px 10px 15px;
+            max-width:75%;
+            float:left;
+            margin-left:10px;
+            position:relative;
+            margin-bottom:20px;
+        }
+
+        .botui-message-content.human{
+            background-color: grey;
+            color: white;
+            max-width:75%;
+            float:right;
+            position:relative;
+            margin-right:10px;
+        }
+
+        .botui-message-content-link {}
+
+        .botui-actions-text-input {padding:10px 15px 10px 15px;
+            max-width:75%;
+            float:left;
+            margin-left:10px;
+            position:relative;
+            margin-bottom:20px;}
+
+        .botui-actions-text-submit {}
+
+        .botui-actions-buttons-button {}
+        .bot{
+             display: flex;}
+    </style>
+</head>
+
+<body>
+    <div class="botui-app-container" id="app">
+        <bot-ui> </bot-ui>
+    </div>
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="https://unpkg.com/botui@0.3.9/build/botui.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
